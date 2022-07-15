@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/recycler_bg"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:id="@+id/icon_view"
+        android:src="@drawable/cd_cover"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/music_title_text"
+        android:layout_toEndOf="@+id/icon_view"
+        android:fontFamily="@font/cabin_condensed_regular"
+        android:padding="10dp"
+        android:maxLines="1"
+        android:ellipsize="marquee"
+        tools:text="Music"
+        android:textColor="@color/black"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>
